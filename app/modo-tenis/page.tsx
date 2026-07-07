@@ -1,9 +1,15 @@
+import { MatchDayFlow } from '@/components/tenis/MatchDayFlow';
 import { PageHeader } from '@/components/layout/PageHeader';
+import { matchPhases } from '@/data/tennis';
 
 export default function ModoTenisPage() {
   return (
     <>
-      <PageHeader title="Modo Tênis" subtitle="Estratégia de suplementação para dia de jogo" />
+      <PageHeader
+        title="Modo Tênis"
+        subtitle="Guia para dias de jogo longos (até 3h) — ative antes de entrar em quadra"
+      />
+      <MatchDayFlow phases={matchPhases} />
     </>
   );
 }
