@@ -26,7 +26,7 @@ export function MetricCard({ metric }: MetricCardProps) {
       <p className="font-metric mt-2 text-3xl font-semibold text-text">{metric.current}</p>
 
       {metric.target && (
-        <p className="mt-1 text-xs text-text-dim">Meta: {metric.target}</p>
+        <p className="mt-1 text-xs text-text-muted">Meta: {metric.target}</p>
       )}
 
       {typeof metric.progress === 'number' && (

@@ -13,7 +13,7 @@ export function TimelineBlock({ block, supplementsById, isLast }: TimelineBlockP
   return (
     <li className="relative flex gap-4">
       <div className="hidden w-16 shrink-0 justify-end pt-5 sm:flex">
-        <span className="font-metric text-sm text-text-dim">{block.time}</span>
+        <span className="font-metric text-sm text-text-muted">{block.time}</span>
       </div>
       <div className="hidden flex-col items-center sm:flex">
         <span className="mt-5 h-2.5 w-2.5 shrink-0 rounded-full bg-accent" aria-hidden="true" />
@@ -21,7 +21,7 @@ export function TimelineBlock({ block, supplementsById, isLast }: TimelineBlockP
       </div>
       <div className="flex-1 pb-6">
         <Card>
-          <p className="font-metric mb-1 text-xs text-text-dim sm:hidden">{block.time}</p>
+          <p className="font-metric mb-1 text-xs text-text-muted sm:hidden">{block.time}</p>
           <h3 className="text-base font-semibold text-text">{block.title}</h3>
           {block.focus && <p className="mt-0.5 text-xs text-text-muted">{block.focus}</p>}
 

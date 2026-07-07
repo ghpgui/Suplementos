@@ -19,7 +19,7 @@ export function BottomNav() {
             key={href}
             href={href}
             aria-current={isActive ? 'page' : undefined}
-            className={`flex min-h-[44px] flex-1 flex-col items-center justify-center gap-0.5 py-2 text-[11px] font-medium transition-colors ${
+            className={`flex min-h-[44px] flex-1 flex-col items-center justify-center gap-0.5 py-2 text-[11px] font-medium transition-colors active:bg-surface-2 focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent ${
               isActive ? 'text-accent' : 'text-text-muted'
             }`}
           >

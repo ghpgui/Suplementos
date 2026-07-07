@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 :root {
+  color-scheme: dark;
+
   --bg:          #0B0F14;  /* fundo base (charcoal) */
   --surface:     #131A22;  /* cartões */
   --surface-2:   #1B242E;  /* cartões elevados / hover */

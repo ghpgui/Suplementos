@@ -25,7 +25,7 @@ function renderAction(action: string): ReactNode {
       <span className="rounded-lg border border-border bg-surface-2 px-2.5 py-1 text-sm font-medium text-text">
         {optionB}
       </span>
-      {note && <span className="text-xs text-text-dim">({note})</span>}
+      {note && <span className="text-xs text-text-muted">({note})</span>}
     </span>
   );
 }
@@ -33,7 +33,7 @@ function renderAction(action: string): ReactNode {
 export function MatchPhaseCard({ phase }: MatchPhaseCardProps) {
   return (
     <Card className="flex h-full flex-col">
-      <p className="font-metric text-xs text-text-dim">{phase.timing}</p>
+      <p className="font-metric text-xs text-text-muted">{phase.timing}</p>
       <h3 className="mt-1 text-base font-semibold text-text">{phase.title}</h3>
 
       <ul className="mt-3 space-y-2 text-sm">

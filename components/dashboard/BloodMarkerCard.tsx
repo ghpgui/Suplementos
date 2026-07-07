@@ -14,7 +14,7 @@ export function BloodMarkerCard({ marker }: BloodMarkerCardProps) {
         <StatusDot status={marker.status} />
       </div>
       <p className="font-metric mt-1 text-xl font-semibold text-text">{marker.value}</p>
-      {marker.note && <p className="mt-1 text-xs text-text-dim">{marker.note}</p>}
+      {marker.note && <p className="mt-1 text-xs text-text-muted">{marker.note}</p>}
     </Card>
   );
 }

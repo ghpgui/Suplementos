@@ -25,7 +25,7 @@ export function WheyComparison({ options }: WheyComparisonProps) {
       <div className="hidden overflow-x-auto rounded-2xl border border-border md:block">
         <table className="w-full text-left text-sm">
           <thead>
-            <tr className="border-b border-border bg-surface text-xs uppercase tracking-wide text-text-dim">
+            <tr className="border-b border-border bg-surface text-xs uppercase tracking-wide text-text-muted">
               <th scope="col" className="px-4 py-3 font-medium">
                 Marca
               </th>
@@ -63,11 +63,11 @@ export function WheyComparison({ options }: WheyComparisonProps) {
               <h3 className="text-base font-semibold text-text">{option.brand}</h3>
               {option.id === 'growth' && <BestValueTag />}
             </div>
-            <p className="mt-1 text-xs font-medium uppercase tracking-wide text-text-dim">
+            <p className="mt-1 text-xs font-medium uppercase tracking-wide text-text-muted">
               {option.type}
             </p>
             <p className="mt-3 text-sm text-text-muted">{option.highlights}</p>
-            <p className="mt-3 text-xs text-text-dim">Onde comprar: {option.availability}</p>
+            <p className="mt-3 text-xs text-text-muted">Onde comprar: {option.availability}</p>
           </Card>
         ))}
       </div>

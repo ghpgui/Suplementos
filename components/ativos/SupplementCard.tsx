@@ -62,7 +62,7 @@ export function SupplementCard({ supplement }: SupplementCardProps) {
 
           {supplement.examJustification && (
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-text-dim">
+              <p className="text-xs font-semibold uppercase tracking-wide text-text-muted">
                 Por que (exame)
               </p>
               <p className="mt-1 text-text-muted">{supplement.examJustification}</p>
@@ -71,7 +71,7 @@ export function SupplementCard({ supplement }: SupplementCardProps) {
 
           {supplement.usage && (
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-text-dim">Uso</p>
+              <p className="text-xs font-semibold uppercase tracking-wide text-text-muted">Uso</p>
               <p className="mt-1 text-text-muted">{supplement.usage}</p>
             </div>
           )}

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { BottomNav } from "@/components/layout/BottomNav";
 import { DisclaimerFooter } from "@/components/layout/DisclaimerFooter";
@@ -18,6 +18,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Painel de Suplementação",
   description: "Painel pessoal de acompanhamento de suplementação e metas.",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0B0F14",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({
