@@ -1,7 +1,9 @@
+import { PageHeader } from '@/components/layout/PageHeader';
+
 export default function Home() {
   return (
-    <main className="flex flex-1 items-center justify-center p-8">
-      <h1 className="text-2xl font-semibold">Painel de Suplementação</h1>
-    </main>
+    <>
+      <PageHeader title="Painel de Metas" subtitle="Composição corporal e marcadores" />
+    </>
   );
 }
