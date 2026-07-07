@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --bg:          #0B0F14;  /* fundo base (charcoal) */
+  --surface:     #131A22;  /* cartões */
+  --surface-2:   #1B242E;  /* cartões elevados / hover */
+  --border:      #263140;
+  --text:        #E6EDF3;
+  --text-muted:  #94A3B8;
+  --text-dim:    #64748B;
+
+  --accent:      #22D3EE;  /* ciano — cor de marca / suplementos */
+  --accent-2:    #34D399;  /* esmeralda — energia/positivo */
+
+  --success:     #34D399;  /* dentro da meta */
+  --warning:     #FBBF24;  /* atenção / otimizar */
+  --danger:      #FB7185;  /* crítico (ex.: Vit. D baixa) */
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-dim: var(--text-dim);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.font-metric {
+  font-family: var(--font-geist-mono), monospace;
+  font-variant-numeric: tabular-nums;
+}

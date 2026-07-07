@@ -1,0 +1,118 @@
+================================================================================
+DIRETRIZES DE ARQUITETURA E CONTEÚDO PARA O SITE PESSOAL DE SUPLEMENTAÇÃO
+================================================================================
+
+[OBJETIVO DO SITE]
+Centralizar o plano de suplementação, metas de composição corporal, cronograma diário
+e estratégias esportivas do Guilherme Petzold, servindo como um guia visual e interativo 
+para eliminar a sonolência, otimizar a energia e manter o foco.
+
+[ESTILO VISUAL SUGERIDO PARA O CÓDIGO]
+- Tema: Dark Mode moderno (Fundo Charcoal/Slate, textos claros, detalhes em tons de verde/azul ciano para suplementos).
+- Framework: React (funcional, baseado em componentes) com Tailwind CSS para estilização.
+- Layout: Dashboard responsivo com navegação lateral ou superior flexível.
+
+================================================================================
+SEÇÃO 1: PAINEL DE METAS E BIOMETRIA (DASHBOARD COMPONENT)
+================================================================================
+Exibir como cartões de métricas (Cards) com barras de progresso ou indicadores de status.
+
+MÉTRICAS ATUAIS VS. METAS:
+- Altura: 1,90 m
+- Peso Atual: 94,0 kg (Estável)
+- Gordura Corporal Atual: 24,5%[cite: 1] -> META: 18,0% (Foco em Cutting/Definição)
+- Massa Muscular Esquelética: 40,5 kg[cite: 1] -> META: Manter (Preservação de Massa Magra)
+- Consumo Proteico Diário Alvo: 180g por dia (Crucial para o metabolismo e saciedade)
+- Marcador Crítico (Vitamina D): 26,8 ng/mL[cite: 3] -> META DE OTIMIZAÇÃO: 40,0 a 60,0 ng/mL
+
+STATUS DOS EXAMES DE SANGUE DE REFERÊNCIA (Para Contexto Clínico):
+- Testosterona Total: 271,47 ng/dL (Dentro da referência, mas no limite inferior para otimização)[cite: 3]
+- Glicemia de Jejum: 93 mg/dL (Ótimo/Estável)[cite: 3]
+- Insulina: 9,3 µUI/mL (Boa sensibilidade, mas exige controle de picos de carboidrato)[cite: 3]
+- HDL-Colesterol: 44 mg/dL (Desejável elevar para maior proteção cardiovascular)[cite: 3]
+- Função Cardíaca (Eco): Normal, com discreta disfunção diastólica isolada (comum em atletas altos, exige suporte mitocondrial)[cite: 2]
+
+================================================================================
+SEÇÃO 2: CRONOGRAMA DIÁRIO DINÂMICO (TIMELINE COMPONENT)
+================================================================================
+Exibir no formato de linha do tempo vertical ou tabela interativa organizada por horários.
+
+07:30 - CAFÉ DA MANHÃ (Foco em Foco Mental e Controle de Insulina)
+- Alimentação: Pão francês com 3 ovos mexidos (Aporte de Colina para o cérebro) + Café preto sem açúcar (Substituindo o antigo capuccino de 700ml).
+- Suplementação:
+  * ALL IN GREENS (1,5 scoop): Micronutrientes base e complexo B[cite: 1].
+  * VITAMINA D3 + K2 (1 dose): Correção do nível de 26,8 ng/mL (Tomar com os ovos, pois necessita de gordura para absorção)[cite: 3].
+
+13:00 - ALMOÇO (Proteção Vascular e Fim da Letargia Pós-Prandial)
+- Alimentação: Arroz, feijão e 150g de proteína magra (Tilápia ou Frango grelhado).
+- Mudança Comportamental Crítica: Substituir o consumo de 1L de suco de laranja por água com limão ou água com gás para cortar o excesso de frutose e evitar a sonolência à tarde.
+- Suplementação:
+  * ÔMEGA 3 CONCENTRADO (2 cápsulas): Ação anti-inflamatória e suporte ao HDL[cite: 1].
+  * COENZIMA Q10 (200 mg): Suporte mitocondrial e proteção cardiovascular[cite: 1].
+
+16:00 - LANCHE DA TARDE (Quebra de Jejum e Vencer o "Crash" de Energia)
+- Alimentação: 1 dose de Whey Protein Isolado batido com água ou café gelado + 1 punhado de castanhas (Gorduras boas).
+- Suplementação:
+  * BURST CAFÉ (1 dose): Termogênico e estimulante para foco cognitivo no fim do expediente e preparação para o treino[cite: 1].
+
+19:30 - PRÉ-TREINO IMEDIATO (Saturação e Energia Rápida)
+- Alimentação: 1 Banana (Glicogênio rápido).
+- Suplementação:
+  * CREATINA (3g a 5g): Manutenção de força e hidratação intracelular na Gaviões[cite: 1].
+
+20:00 às 21:30 - TREINO
+- Ação: Treino de Musculação de Alta Performance na Academia Gaviões.
+
+22:00 - JANTAR / PÓS-TREINO (Reposição Estrutural)
+- Alimentação: Lanche proteico prático (Frango desfiado, carne moída ou atum em lata) + Refrigerante Zero (Substituindo o uso excessivo de hambúrgueres pesados).
+
+23:00 - HIGIENE DO SONO (Relaxamento Neuromuscular)
+- Suplementação:
+  * FÓRMULA 4MAG - RITUÁRIA (1 dose): Mix de Magnésio Malato, Bisglicinato, Taurato e Citrato. Focado em relaxamento do sistema nervoso central e indução ao sono REM profundo.
+
+24:00 - DORMIR (Janela de 7 horas de sono reparador)
+
+================================================================================
+SEÇÃO 3: ENCICLOPÉDIA DE ATIVOS (KNOWLEDGE BASE COMPONENT)
+================================================================================
+Exibir como "Cards expandíveis" ou um Grid com pop-ups contendo as explicações e justificativas.
+
+1. VITAMINA D3 + K2
+- Função principal: Elevar os níveis séricos de cálcio e imunidade[cite: 1].
+- Justificativa no exame: Nível atual de 26,8 ng/mL está abaixo do limiar de otimização de energia[cite: 3].
+
+2. CREATINA
+- Função principal: Ressíntese de ATP, ganho de força e volumização muscular[cite: 1].
+- Justificativa no exame: Proteger e manter os 40,5kg de massa muscular esquelética durante a fase de queima de gordura[cite: 1].
+
+3. ÔMEGA 3 + COENZIMA Q10
+- Função principal: Saúde cardiovascular, controle do estresse oxidativo e perfil lipídico[cite: 1].
+- Justificativa no exame: Auxiliar na modulação do HDL (44 mg/dL) e fornecer energia mitocondrial para o ventrículo esquerdo[cite: 2, 3].
+
+4. FÓRMULA 4MAG (MAGNÉSIO QUELADO)
+- Função principal: Recuperação neuromuscular e melhora da arquitetura do sono.
+- Justificativa no exame: O magnésio malato fornece suporte energético sutil, enquanto o taurato e bisglicinato reduzem a atividade do sistema simpático à noite, permitindo um sono que combate o cansaço crônico.
+
+5. T-HARD (TRIBULUS + MACA + TADALAFILA 5MG)
+- Função principal: Vasodilatação periférica e suporte à vitalidade.
+- Recomendação de uso: 1 dose pela manhã (08:30) para manter o fluxo de nutrientes otimizado. Monitorar pressão arterial devido à tadalafila diária[cite: 3].
+
+================================================================================
+SEÇÃO 4: MÓDULO DE PERFORMANCE INTERATIVO: "MODO TÊNIS" (ENDURANCE APP)
+================================================================================
+Um componente visual que funciona como um "Guia de Partida" ativado para os dias de jogos longos (até 3 horas).
+
+FLUXO DO DIA DE JOGO:
+- PRÉ-JOGO (45 min antes): 1 Banana + Creatina + Burst Café (OU T-hard — *nunca misturar ambos na mesma janela* devido ao estímulo cardiovascular combinado).
+- INTRA-JOGO (Em quadra): 1 garrafa de água mineral intercalada com doses de Água de Coco (máximo 500ml no jogo) para repor potássio e magnésio perdidos no suor. Consumir 1 banana ou gel de carbo na metade do jogo (1h30 de partida) para evitar depleção de glicogênio.
+- PÓS-JOGO IMEDIATO (Recuperação/RTC): Shake com 1 a 2 scoops de Whey Protein Isolado batido com água fria para interromper o catabolismo.
+
+================================================================================
+SEÇÃO 5: GUIA INTEGRADO DE COMPRAS DE WHEY PROTEIN
+================================================================================
+Exibir como uma tabela comparativa direta de tomada de decisão.
+
+- DUX NUTRITION (Isolado/Cappuccino): Excelente palatabilidade. Perfeito para misturar com café preto e criar um cappuccino proteico matinal sem açúcar. Fácil acesso físico em Alphaville.
+- ESSENTIAL NUTRITION (Cacao Whey): Foco em saúde intestinal e digestibilidade máxima. Adoçantes 100% naturais (stevia/taumatina). Disponível no Shopping Iguatemi/Mundo Verde.
+- GROWTH SUPPLEMENTS (Concentrado 80%): Melhor custo por grama de proteína. Ideal para manter o estoque mensal alto para bater a meta de 180g/dia sem estourar o orçamento. Venda exclusiva pelo site.
+================================================================================
