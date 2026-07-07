@@ -1,5 +1,7 @@
 # Painel de Suplementação — Pacote de Planejamento
 
+**App publicado:** https://suplementos-opal.vercel.app/
+
 Este pacote transforma o `Plano_001.txt` em um projeto executável pelo **Claude Code**,
 seguindo a convenção de fases sequenciais (`fase_00` → `fase_08`) e o princípio de que
 **todo o conteúdo e regra de design vive em arquivos versionados**, de modo que o projeto
