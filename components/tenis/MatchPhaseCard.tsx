@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import { MatchPhase } from '@/lib/types';
 import { Card } from '@/components/ui/Card';
 import { Callout } from '@/components/ui/Callout';
+import { RecipeBox } from '@/components/ui/RecipeBox';
 
 interface MatchPhaseCardProps {
   phase: MatchPhase;
@@ -35,6 +36,8 @@ export function MatchPhaseCard({ phase }: MatchPhaseCardProps) {
     <Card className="flex h-full flex-col">
       <p className="font-metric text-xs text-text-muted">{phase.timing}</p>
       <h3 className="mt-1 text-base font-semibold text-text">{phase.title}</h3>
+
+      {phase.recipe && <RecipeBox recipe={phase.recipe} />}
 
       <ul className="mt-3 space-y-2 text-sm">
         {phase.actions.map((action) => (

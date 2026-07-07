@@ -43,10 +43,15 @@ export const schedule: ScheduleBlock[] = [
   {
     id: 'lanche', time: '16:00', title: 'Lanche da Tarde',
     focus: 'Quebra de jejum e vencer o "crash" de energia',
-    food: [
-      'Whey isolado com água ou café gelado',
-      '1 punhado de castanhas (gorduras boas)',
-    ],
+    food: ['1 punhado de castanhas (gorduras boas)'],
+    recipe: {
+      title: 'Shake da Tarde',
+      base: 'Água ou café gelado',
+      ingredients: [
+        { name: 'Whey Protein Isolado', amount: '1 dose',
+          note: 'Aporte proteico + foco no fim do expediente' },
+      ],
+    },
     supplements: [
       { supplementId: 'burst-cafe', name: 'Burst Café', dose: '1 dose',
         note: 'Termogênico / foco cognitivo e preparação p/ treino' },

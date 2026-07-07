@@ -60,4 +60,24 @@ export const supplements: SupplementInfo[] = [
     mainFunction: 'Aporte proteico rápido; ajuda a bater os 180 g/dia e cortar catabolismo.',
     usage: 'Lanche (16:00) e pós-treino/pós-jogo.',
   },
+  {
+    id: 'hydrolift',
+    name: 'Hydrolift (Essential Nutrition)',
+    category: 'Eletrólitos',
+    accent: 'cyan',
+    mainFunction:
+      'Repositor de eletrólitos de alta qualidade (sódio, potássio, magnésio e minerais). ' +
+      'Evita desidratação, cãibras e a fadiga muscular extrema que costuma bater após ~1h30 de jogo.',
+    usage: 'Intra-treino: 1 scoop/sachê na Garrafa Oficial (700 ml–1 L).',
+  },
+  {
+    id: 'palatinose',
+    name: 'Palatinose',
+    category: 'Carboidrato',
+    accent: 'emerald',
+    mainFunction:
+      'Carboidrato inteligente derivado da beterraba, de liberação lenta e gradual. ' +
+      'Garante energia constante do primeiro ao último game, sem o "crash" da insulina alta.',
+    usage: 'Intra-treino: 1 a 2 scoops (21–42 g) na garrafa, junto do Hydrolift.',
+  },
 ];

@@ -1,5 +1,6 @@
 import { ScheduleBlock, SupplementInfo } from '@/lib/types';
 import { Card } from '@/components/ui/Card';
+import { RecipeBox } from '@/components/ui/RecipeBox';
 import { BehaviorTip } from './BehaviorTip';
 import { SupplementPill } from './SupplementPill';
 
@@ -32,6 +33,8 @@ export function TimelineBlock({ block, supplementsById, isLast }: TimelineBlockP
               ))}
             </ul>
           )}
+
+          {block.recipe && <RecipeBox recipe={block.recipe} />}
 
           {block.supplements.length > 0 && (
             <div className="mt-3 flex flex-col gap-2">

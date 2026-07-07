@@ -28,6 +28,17 @@ export interface ScheduledSupplement {
   note?: string;
 }
 
+/** Bloco de "receita" reutilizado no Cronograma e no Modo Tênis */
+export interface Recipe {
+  title: string;
+  base: string;                 // ex.: "700 ml a 1 L de água bem gelada"
+  ingredients: {
+    name: string;
+    amount: string;
+    note?: string;
+  }[];
+}
+
 /** Seção 2 — bloco do cronograma diário */
 export interface ScheduleBlock {
   id: string;
@@ -35,6 +46,7 @@ export interface ScheduleBlock {
   title: string;
   focus?: string;
   food: string[];
+  recipe?: Recipe;
   supplements: ScheduledSupplement[];
   behaviorTip?: string;   // "Mudança Comportamental Crítica"
 }
@@ -58,6 +70,7 @@ export interface MatchPhase {
   phase: 'pre' | 'intra' | 'pos';
   title: string;
   timing: string;
+  recipe?: Recipe;
   actions: string[];
   warnings?: string[];
 }
